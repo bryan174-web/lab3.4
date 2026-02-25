@@ -1,0 +1,123 @@
+
+/*
+Author: Bryan Sevilla
+Date:2/20/2026
+File Name: styles.css for Lab3: Advanced Layout with FLexbox, Grid and positioning
+*/
+
+header {
+  background-color: #567ec9;
+  padding: 1rem;
+}
+nav ul {
+  list-style:none;
+  display:flex;
+  justify-content:space-between;
+  padding:0;
+  margin:0;
+}
+nav ul li a {
+text-decoration: none;
+color: white;
+}
+.logo-combo {
+  display:flex;
+  align-items:center;
+  
+}
+.logo-combo img {
+width : 70%;
+height: 70%;
+
+}
+.logo-combo h1 {
+  justify-content: center;
+
+
+}
+
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+}
+#blueDIV {
+  position:relative;
+  width:100px;
+  padding:10px;
+  background-color:lightblue;
+  left: 50px;
+}
+body {
+  background-color:#E7E9EB;
+}
+#myDIV2 {
+  height:300px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+#myDIV2 div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: 1 / 1 / span 2 / span 3;
+}
+.outer_layer {
+  display:grid;
+  grid-template-columns: 1fr 1fr 0fr;
+  gap: 2rem;
+  font-family: sans-serif;
+  transition: all ease-in-out 350ms;
+}
+
+.outer_layer:hover {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.column div {
+  padding: 0 2rem;
+}
+
+.extra {
+  position: relative;
+  background: #7AB2B2;
+}
+
+.extra > div {
+  position: absolute;
+  padding: 0 2rem;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2em;
+    padding: 2em;
+    pointer-events: none;
+}
+ .gallery img {
+    display: block;
+    width: 100%;
+    border-radius: .25em;
+    transition: 250ms 50ms;
+    pointer-events: auto;
+  }
+
+ .gallery:hover img:not(:hover) {
+        filter: saturate(.2) opacity(.5);
+  }
