@@ -58,7 +58,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 10px;
-  background-color: #2196F3;
+  background-color: #7AB2B2;
   padding: 10px;
 }
 #myDIV2 div {
@@ -121,3 +121,11 @@ body {
  .gallery:hover img:not(:hover) {
         filter: saturate(.2) opacity(.5);
   }
+ footer {
+    text-align: center;
+    font-size: 0.85em;
+    clear: left;
+    background-color: #567ec9;
+    font-weight: bold;
+    color:white;
+}
