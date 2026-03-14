@@ -19,4 +19,69 @@ Date: 3/2/2026
   text-align: center;
   padding: 20px 0 ;
   font-size: 30px;
+
+}
+.item1 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    grid-template-columns: 60% 35%;
+}
+
+.item1 .a{
+    grid-column: 1;
+    grid-row: 1;
+    background-color:aquamarine;
+}
+
+.item1 .b {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: aquamarine;
+}
+
+.item1 .c {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: aquamarine;
+}
+
+
+
+.item2 {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    grid-template-columns: 60% 35%;
+}
+
+.item2 .d {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: aquamarine;
+         text-align: right;
+}
+
+.item2 .e {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: aquamarine;
+}
+
+.item2 .f {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+        background-color: aquamarine;
+}
+.item7 {
+     text-align: right;
+}
+.basic-box box {
+  
+  width: 50px;
+  height:50px;
+  background: #24282c;
+  margin: 1rem;
+  place-items: center;
+  color:#638f76
 }
