@@ -3,85 +3,101 @@
 Assignment Name: Lab 4: Image Effects
 Date: 3/2/2026
 */
-
-
-
-.grid-container {
-  display: grid;
-  grid-template: 150px / auto  auto ;
-  grid-gap:5px 45px ;
-  background-color: #2196F3;
-  padding: 5px;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0 ;
-  font-size: 30px;
-
-}
-.item1 {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 10px;
-    grid-template-columns: 60% 35%;
-}
-
-.item1 .a{
-    grid-column: 1;
-    grid-row: 1;
-    background-color:aquamarine;
-}
-
-.item1 .b {
-    grid-column: 1;
-    grid-row: 2;
-    background-color: aquamarine;
-}
-
-.item1 .c {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    background-color: aquamarine;
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#17b8b0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
 }
 
 
+.container{
+    display:flex;
+    gap:40px;
+}
+/* Poster */
+.poster{
+    width:350px;
+    height:520px;
+    background:white;
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    padding:30px;
+}
+/* Dark poster */
 
-.item2 {
-    display: grid;
-    grid-template-rows: auto auto;
-    gap: 10px;
-    grid-template-columns: 60% 35%;
+.dark{
+    background:black;
+    color:white;
+}
+.title{
+    font-size:48px;
+    letter-spacing:5px;
+    font-weight:900;
 }
 
-.item2 .d {
-        grid-column: 1;
-        grid-row: 1;
-        background-color: aquamarine;
-         text-align: right;
+.subtitle{
+    font-size:14px;
+    letter-spacing:2px;
+    margin-bottom:20px;
 }
 
-.item2 .e {
-        grid-column: 1;
-        grid-row: 2;
-        background-color: aquamarine;
+.info{
+    position:absolute;
+    top:40px;
+    right:30px;
+    text-align:right;
+    font-size:14px;
 }
 
-.item2 .f {
-        grid-column: 2;
-        grid-row: 1 / span 2;
-        background-color: aquamarine;
+.red{
+    position:absolute;
+    width:100%;
+    height:150px;
+    background:#ef2b3a;
+    bottom:140px;
+    left:0;
 }
-.item7 {
-     text-align: right;
+
+.teal{
+    position:absolute;
+    width:100%;
+    height:150px;
+    background:#3fc1bb;
+    bottom:0;
+    left:0;
 }
-.basic-box box {
-  
-  width: 50px;
-  height:50px;
-  background: #24282c;
-  margin: 1rem;
-  place-items: center;
-  color:#638f76
+.circle{
+    position:absolute;
+    border-radius:50%;
 }
+
+.black{
+    width:120px;
+    height:120px;
+    background:#111;
+    bottom:120px;
+    left:-30px;
+}
+
+.red-circle{
+    width:120px;
+    height:120px;
+    background:#ef2b3a;
+    bottom:160px;
+    left:120px;
+}
+
+.footer{
+    
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    font-weight:bold;
+    font-size:20px;
+}
+
